@@ -6,58 +6,60 @@ h1 {
 }
 
 .navbar-custom .navbar-brand img {
-  height: 65px; /* Adjust the height of the logo image */
-  /* Maintain aspect ratio */
+  height: 65px; 
   text-align: 20px;
 }
 
 .navbar-custom {
-  background-color: #ffffff; /* White background color */
+  background-color: #ffffff; 
   padding: 0.5rem 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-custom .navbar-brand {
-  color: #ffffff; /* White text color */
-  font-size: 1.5rem; /* Larger font size for brand */
+  color: #ffffff; 
+  font-size: 1.5rem; 
   font-weight: bold;
 }
 
 .navbar-custom .navbar-nav .nav-link {
-  color: #310e48; /* Purple text color */
+  color: #310e48;
   font: weight 200px;
 }
 
 .navbar-custom .navbar-nav .nav-link:hover {
-  color: #a08ead; /* Light purple text color on hover */
+  color: #a08ead; 
 }
 
-.navbar-custom .navbar-nav .login-box {
-  background-color: rgb(255, 255, 255); /* White background color for login box */
-  padding: 1px 5px; /* Adjust padding as needed */
-  border-radius: 5px;
-  border: 1px solid rgba(26, 11, 40, 0.5); /* Thin border style with rgba color */
+.navbar-custom .login-box {
+  background-color: rgb(255, 255, 255); 
+  padding: 1px 15px;
+  border-radius: 6px;
+  border: 1px solid rgba(26, 11, 40, 0.5);
+  margin-right: 10px;
 }
-
 
 .navbar-custom .navbar-nav .login-box:hover {
-  background-color: rgba(255, 255, 255, 0.966); /* Orange background color for register box */
-  padding: 1px 5px; /* Adjust padding as needed */
-  border-radius: 10px;
-  border-color: #1a0b28; /* Rounded corners */
+  background-color: rgba(255, 255, 255, 0.966); 
+  padding: 1px 15px; 
+  border-radius: 6px;
+  border-color: #1a0b28; 
 }
-.navbar-custom .navbar-nav .register-box {
-  background-color: rgb(255, 136, 0); /* Orange background color for register box */
-  padding: 2px 6px; /* Adjust padding as needed */
-  border-radius: 6px; /* Rounded corners */
+.navbar-custom .register-box {
+  background-color: rgb(255, 136, 0); 
+  padding: 2px 15px; 
+  border-radius: 6px;
 }
+
+
 .navbar-custom .navbar-nav .register-box:hover {
-  background-color: rgb(255, 159, 49); /* Orange background color for register box */
-  padding: 2px 6px; /* Adjust padding as needed */
-  border-radius: 6px; /* Rounded corners */
+  background-color: rgb(255, 159, 49); 
+  padding: 2px 15px; 
+  border-radius: 6px; 
 }
 .navbar-custom .navbar-nav .register-link {
-  color: #ffffff; /* White text color */
+  
+  color: #ffffff;
   font: weight 200px;
 }
 
@@ -65,22 +67,42 @@ h1 {
 
 .heading {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 200px;
 }
 .heading h2 {
   font-weight: bold;
-  font-size: 2.5rem; /* Adjust font size for h2 */
+  font-size: 3rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: #2f2f2f; /* Adjust text color */
+  color: #2f2f2f; 
 }
 .heading p {
-  font-size: 1.5rem; /* Adjust font size for paragraph */
-  color: #959595; /* Adjust text color */
+  font-size: 1.3rem; 
+  color: #959595; 
 }
-body .bbbootstrap {
-  background-image: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1566917764/Add_a_heading.png) !important;
+
+
+.bbbootstrap img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bbbootstrap .container {
+  position: relative;
+  z-index: 1; 
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5); 
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.bbbootstrap {
+  position: relative;
   background-size: cover;
-  padding: 180px 0 30px 0;
+  padding: 350px 0; 
+  text-align: center; 
 }
 
 .bbbootstrap {
@@ -114,20 +136,21 @@ span {
 
 .bbbootstrap form input[type="text"] {
   padding: 15px 20px;
-  padding-right: 100px;
+  padding-right: 100px; 
   border-color: transparent;
   border-radius: 4px;
 }
-input.InputBox{
+
+input.InputBox {
   font-family: "lucida grande", "Lucida Sans Unicode", tahoma, sans-serif;
   color: #333;
   font-size: 15px;
-  padding: 3px;
-  margin: 0;
+  padding: 8px 12px; 
+  margin-bottom: 10px; 
   width: 250px;
   background: #fff;
-  border: 1px solid #999;
-  border: 1px solid rgba(0, 0, 0, 0.4);
+  border: none; 
+  outline: none;
 }
 
 
@@ -159,9 +182,22 @@ body .Button, body .button {
 
 
 input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer;
+  cursor: pointer; 
+  background-color: #1268b3; 
+  color: #fff; 
+  border: none; 
+  padding: 10px 25px; 
+  font-size: 13px;
+  font-weight: 700; 
+  text-transform: uppercase; 
+  border-radius: 3px; 
+  transition: background-color 0.3s ease; 
 }
+
+input[type="submit"]:hover {
+  background-color: #0e5a9e; 
+}
+
 
 .Button, .Button:hover, .Button:focus, .Button:active {
   text-shadow: none;
@@ -176,22 +212,24 @@ input[type="submit"] {
   font-weight: 700;
   line-height: 22px;
   text-transform: uppercase;
-  border: transparent solid 1px;
+  border: 1px solid transparent;
   border-radius: 3px;
-  -webkit-transition: -webkit-box-shadow 50ms;
-  transition: -webkit-box-shadow 50ms;
-  -o-transition: box-shadow 50ms;
-  transition: box-shadow 50ms;
-  transition: box-shadow 50ms, -webkit-box-shadow 50ms;
-  -webkit-font-smoothing: inherit;
+  transition: box-shadow 0.3s ease;
+  -webkit-font-smoothing: antialiased;
   color: #fff;
-  background-color: #2e9df7;
-  background-repeat: repeat-x;
   background-color: #38a2f7;
-  background-image: -webkit-linear-gradient(#38a2f7, #2498f7);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#38a2f7), to(#2498f7));
-  background-image: -o-linear-gradient(#38a2f7, #2498f7);
   background-image: linear-gradient(#38a2f7, #2498f7);
+}
+
+.Button:hover {
+  background-color: #2498f7;
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+.heading-large {
+  font-size: 2.5rem; 
+  font-weight: bold; 
+  color: #333; 
 }
 .card {
   border: none;
@@ -200,13 +238,13 @@ input[type="submit"] {
 }
 
 .card:hover {
-  box-shadow: 0 0 11px rgba(33,33,33,.2); /* Optional: Adds shadow on hover */
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
 
 .card-img-top {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  height: 200px; /* Adjust image height */
+  height: 200px;
   object-fit: cover;
 }
 
@@ -226,7 +264,7 @@ input[type="submit"] {
 }
 /* Custom CSS for Carousel */
 .carousel-item {
-  height: 400px; /* Adjust carousel item height */
+  height: 400px; 
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -234,12 +272,12 @@ input[type="submit"] {
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
-  background-color: #fff; /* Arrow color */
+  background-color: #fff; 
 }
 
 .carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
-  background-color: #ccc; /* Hover color */
-  color: #333; /* Hover text color */
+  background-color: #ccc; 
+  color: #333;
 }
 h3{
 text-align: center;
