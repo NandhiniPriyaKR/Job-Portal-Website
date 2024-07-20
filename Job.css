@@ -1,38 +1,68 @@
 h1 {
   font-weight: bold;
+  font-size: 5rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: #ffffff;
+  color: #1a0b28;
 }
+
 .navbar-custom .navbar-brand img {
-  height: 70px; /* Adjust the height of the logo image */
+  height: 65px; /* Adjust the height of the logo image */
   /* Maintain aspect ratio */
+  text-align: 20px;
 }
+
 .navbar-custom {
-  background-color: #19143e; /* Green background color */
+  background-color: #ffffff; /* White background color */
   padding: 0.5rem 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .navbar-custom .navbar-brand {
   color: #ffffff; /* White text color */
   font-size: 1.5rem; /* Larger font size for brand */
   font-weight: bold;
 }
+
 .navbar-custom .navbar-nav .nav-link {
-  color: #ffffff; /* White text color */
-  font-weight: bold;
+  color: #310e48; /* Purple text color */
+  font: weight 200px;
 }
+
 .navbar-custom .navbar-nav .nav-link:hover {
-  color: #e4e3e3; /* White text color on hover */
-  background-color: rgba(255, 255, 255, 0.1); /* Transparent white background */
+  color: #a08ead; /* Light purple text color on hover */
 }
-.navbar-custom .navbar-nav .login-link:hover {
-  background-color: rgb(18, 202, 18);
-  color: #ffffff; /* White text color on hover */
+
+.navbar-custom .navbar-nav .login-box {
+  background-color: rgb(255, 255, 255); /* White background color for login box */
+  padding: 1px 5px; /* Adjust padding as needed */
+  border-radius: 5px;
+  border: 1px solid rgba(26, 11, 40, 0.5); /* Thin border style with rgba color */
 }
-.navbar-custom .navbar-nav .register-link:hover {
-  background-color:orange;
-  color: rgb(21, 21, 20); /* Orange text color on hover */
+
+
+.navbar-custom .navbar-nav .login-box:hover {
+  background-color: rgba(255, 255, 255, 0.966); /* Orange background color for register box */
+  padding: 1px 5px; /* Adjust padding as needed */
+  border-radius: 10px;
+  border-color: #1a0b28; /* Rounded corners */
 }
+.navbar-custom .navbar-nav .register-box {
+  background-color: rgb(255, 136, 0); /* Orange background color for register box */
+  padding: 2px 6px; /* Adjust padding as needed */
+  border-radius: 6px; /* Rounded corners */
+}
+.navbar-custom .navbar-nav .register-box:hover {
+  background-color: rgb(255, 159, 49); /* Orange background color for register box */
+  padding: 2px 6px; /* Adjust padding as needed */
+  border-radius: 6px; /* Rounded corners */
+}
+.navbar-custom .navbar-nav .register-link {
+  color: #ffffff; /* White text color */
+  font: weight 200px;
+}
+
+
+
 .heading {
   text-align: center;
   margin-top: 80px;
@@ -162,4 +192,58 @@ input[type="submit"] {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#38a2f7), to(#2498f7));
   background-image: -o-linear-gradient(#38a2f7, #2498f7);
   background-image: linear-gradient(#38a2f7, #2498f7);
+}
+.card {
+  border: none;
+  border-radius: 8px;
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); /* Optional: Adds shadow on hover */
+}
+
+.card-img-top {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 200px; /* Adjust image height */
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666;
+}
+/* Custom CSS for Carousel */
+.carousel-item {
+  height: 400px; /* Adjust carousel item height */
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 5%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: #fff; /* Arrow color */
+}
+
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+  background-color: #ccc; /* Hover color */
+  color: #333; /* Hover text color */
+}
+h3{
+text-align: center;
+}
+body{
+  background-color: #fffffff2;
 }
